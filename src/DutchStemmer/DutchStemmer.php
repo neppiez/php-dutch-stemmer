@@ -330,7 +330,7 @@ class DutchStemmer
         }
 
         // loop through letters
-        for ($i = 1; $i < $num_letters; $i++) {
+        for ($i = 1; $i < ($num_letters-1); $i++) {
             if ($letters[$i] == 'i') {
                 // check if i is between two vowels
                 if ($this->isVowel($letters[$i - 1]) && $this->isVowel($letters[$i + 1])) {
