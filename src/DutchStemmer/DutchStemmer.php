@@ -424,7 +424,7 @@ class DutchStemmer
      */
     private function getRIndex($term, $start)
     {
-        if ($start == 0) {
+        if ($start <= 0) {
             $start = 1;
         }
 
